@@ -1,4 +1,4 @@
-namespace EatDeezApi.Models;
+namespace ZelpApi.Models;
 
 public class User
 {
