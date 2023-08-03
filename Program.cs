@@ -17,6 +17,7 @@ builder.Services.AddSwaggerGen();
 var keyVaultURI = new Uri(builder.Configuration.GetSection("KeyVaultURI").Value!);
 
 // you need to be logged in to Azure for this to work, via azure cli or visual studio
+// test
 var azureCredential = new DefaultAzureCredential();
 
 // Adds our secrets from Key Vault to the configuration
