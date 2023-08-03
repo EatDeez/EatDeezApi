@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
-using EatDeezApi.Models;
+using ZelpApi.Models;
 
-namespace EatDeezApi.Controllers;
+namespace ZelpApi.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class UserController : ControllerBase
 {
     // mock data
