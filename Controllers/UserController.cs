@@ -4,7 +4,7 @@ using ZelpApi.Models;
 namespace ZelpApi.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("[controller]")]
 public class UserController : ControllerBase
 {
     // mock data
