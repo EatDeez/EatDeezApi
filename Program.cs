@@ -14,14 +14,14 @@ builder.Services.AddSwaggerGen();
 
 // https://www.youtube.com/watch?v=I8p8j5MuMAo
 
-var keyVaultURI = new Uri(builder.Configuration.GetSection("KeyVaultURI").Value!);
+// var keyVaultURI = new Uri(builder.Configuration.GetSection("KeyVaultURI").Value!);
 
-// you need to be logged in to Azure for this to work, via azure cli or visual studio
-// test
-var azureCredential = new DefaultAzureCredential();
+// // you need to be logged in to Azure for this to work, via azure cli or visual studio
+// // test
+// var azureCredential = new DefaultAzureCredential();
 
-// Adds our secrets from Key Vault to the configuration
-builder.Configuration.AddAzureKeyVault(keyVaultURI, azureCredential);
+// // Adds our secrets from Key Vault to the configuration
+// builder.Configuration.AddAzureKeyVault(keyVaultURI, azureCredential);
 
 var app = builder.Build();
 
